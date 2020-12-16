@@ -1,7 +1,7 @@
 <template>
     <div id="VerReserva">
 
-        <h1>Hola, estos son los detalles de la reserva:</h1>
+        <h1>Estos son los detalles de la reserva:</h1>
         <p>Id de la reserva: <span>{{idReserva}}</span><br>
         Fecha de la reserva: <span> {{fechaReserva}}</span><br>
         Fecha de llegada: <span>{{fechaLlegada}}</span><br>

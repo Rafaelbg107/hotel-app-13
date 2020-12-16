@@ -1,7 +1,7 @@
 <template>
     <div id = "myForm">
         <form @submit="postData" method="POST">
-            <h3>Ingresa la información a continuación para registrar tu reserva</h3>
+            <h3>Por favor diligencia los campos a continuación para registrar tu reserva.</h3>
 
             <input type="hidden" name="idReserva" v-model="posts.idReserva">
             <input type="hidden" name="fechaReserva" v-model="posts.fechaReserva">

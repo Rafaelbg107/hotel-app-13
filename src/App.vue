@@ -21,8 +21,8 @@
       <router-view></router-view>   
     </div>
 
-    <div class="footer">
-      <h2>Misión TIC 2022</h2>
+        <div class="footer">
+      <h2>Desarrollado para Misión TIC 2022. Todos los derechos reservados ©</h2>
     </div>
   </div>
 </template>

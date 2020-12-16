@@ -1,7 +1,7 @@
 <template>
     <div  id="myForm">
         <form @submit="postData" method="POST">
-          <h3>Comprueba la disponibilidad</h3>
+          <h3>Antes de reservar: Comprueba la disponibilidad. </h3>
 
           <label for="fechaLlegada">Fecha de llegada: </label>
             <input type="date" name="fechaLlegada" id="fechaLlegada" value='2021-01-01' 
@@ -71,6 +71,7 @@
                     //this.posts.detalles = JSON.stringify(result.data)
                     //window.location("../reserva/hacerReserva")
                     if (result.status == 200) {
+                            alert("Tenemos disponibilidad para la fecha indicada. \nDa click en aceptar para continuar con la reserva.");
                             window.location = "../hacer-reserva/reservar" 
                     }
                 })
