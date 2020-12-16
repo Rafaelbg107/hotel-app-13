@@ -75,24 +75,28 @@
 
 <style>
     #VerReserva{
-        width: 100%;
+        width: 60%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: "Bahnschrift Light", "Bahnschrift Light";
-    }
+        font-family: "Bahnschrift Light";
+        background-color: #f3f3f3d8
+}
+
     #VerReserva h1{
         font-size: 25px;
         color: #0d1620;
+        font-family: "Bahnschrift Light", "Bahnschrift Light";
+    
     }
 
     #VerReserva p{
         font-size: 22px;
         color: #283747;
         text-align: justify;
-        font-weight: bold;
+        
     }
     #VerReserva h3{
         font-size: 7px;
@@ -100,8 +104,10 @@
     }
 
     #VerReserva span{
-        color: rgb(96, 23, 180);
-        font-weight: bold;
+        color: #2592ad;
+        font-weight: normal ;
+        font-family: "Bahnschrift Light","Bahnschrift Light" ;
+        
     }
 </style>
 

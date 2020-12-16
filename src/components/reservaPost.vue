@@ -398,18 +398,16 @@
 
 <style>
     #myForm {
-        font-family: "Bahnschrift Light", "Bahnschrift Light";
-        background-color: rgba(10, 250, 100, 0.3);
+        font-family: "Bahnschrift Light";
     }
 
     input[type=submit]{
-        background-color: black;
+        background-color: #2f8ca3b0;
         border: none;
         color: white;
         padding: 10px 20px;
         text-decoration: none;
-        margin: 4px 2px;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: bold; 
     }
 </style>

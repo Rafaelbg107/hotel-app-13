@@ -1,8 +1,8 @@
 {
   "name": "hotel_app",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "Rafael R. Bustos G. <rafaelbg107@gmail.com>",
+  "description": "A UI for a hotel created by group 13",
+  "author": "Grupo 13",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
