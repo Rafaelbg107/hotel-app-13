@@ -1,7 +1,7 @@
 <template>
     <div>
         <form>
-          <button type="submit" v-on:click="verReservas">Ver Reservas</button>
+          <button type="submit" v-on:click="verReservas" v-if="funciona">Ver Reservas</button>
         </form>
         <form>
           <button type="submit" v-on:click="verDatos">Ver datos</button>
@@ -69,6 +69,7 @@
                 data5:"",
                 visibleReservas: false,
                 visibleDatos: false,
+                funciona: false,
                 datosUser:{
                         nombres: "",
                         apellidos: "",
