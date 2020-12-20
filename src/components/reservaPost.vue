@@ -378,7 +378,7 @@
         },
         methods: {
             postData(e){
-                this.axios.post("https://hotel-api-equipo13.herokuapp.com/reserva/reservar", this.posts)
+                this.axios.post("https://hotel-equipo13-api.herokuapp.com/reserva/reservar", this.posts)
                 .then((result)=>{
                     console.log(result.data)
                     //this.posts.detalles = JSON.stringify(result.data)

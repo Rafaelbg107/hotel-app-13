@@ -66,7 +66,7 @@
         },
         methods: {
             postData(e){
-                this.axios.post("https://hotel-api-equipo13.herokuapp.com/reserva/disponibilidad", this.posts)
+                this.axios.post("https://hotel-equipo13-api.herokuapp.com/reserva/disponibilidad", this.posts)
                 .then((result)=>{
                     //this.posts.detalles = JSON.stringify(result.data)
                     //window.location("../reserva/hacerReserva")
