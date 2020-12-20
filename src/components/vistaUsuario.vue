@@ -82,7 +82,7 @@
         },
         methods: {
             verReservas(e){
-                this.axios.get("https://hotel-equipo13-api.herokuapp.com/perfil/reservas/" + localStorage.getItem('currentEmail'))
+                this.axios.get("https://hotel-equipo13-api.herokuapp.com/perfil/consultar/" + localStorage.getItem('currentEmail'))
                 .then((result)=>{
                     //this.posts.detalles = JSON.stringify(result.data)
                     //window.location("../reserva/hacerReserva")
