@@ -13,7 +13,8 @@
               pattern="[0-9]{1,15}" required v-model="idres">
           <button type="submit" v-on:click="verReserva">Buscar reserva</button>
         </form>
-        <button > Login </button>
+          <button v-on:click="login" v-if="is_auth == 'false'"> Iniciar Sesión </button>
+          <button v-on:click="cerrarSesion" v-if="is_auth2 == 'false'"> Cerrar Sesión </button>
       </nav>
     </div>
 
@@ -40,14 +41,21 @@ export default {
 
   data: function(){
     return {
-    is_auth: localStorage.getItem('isAuth') || false,
-    idres: this.$refs.idres
+      idres: this.$refs.idres,
+      is_auth: localStorage.getItem('isAuth') || true,
+      is_auth2: localStorage.getItem('isAuth2') || false,
+      current_email: localStorage.getItem('currentEmail')
     }
   },
   methods: {
     init: function(){
       if(this.$route.name != "root"){
         this.$router.push({name: "root"})
+      }
+    },
+    login: function(){
+      if(this.$route.name != "login"){
+        this.$router.push({name: "login"})
       }
     },
     verReserva: function(){
@@ -58,8 +66,22 @@ export default {
       else
         alert("Ingrese un número de reserva");
       },
-  
+    cerrarSesion: function(){
+      localStorage.setItem('isAuth', false)
+      localStorage.setItem('isAuth2', true)
+      localStorage.setItem('currentEmail', "")
+      localStorage.setItem('count',"")
+      console.log(typeof this.is_auth)
+      console.log(this.is_auth2)
+      window.location = "../Inicio/"
+    },
   },
+  beforeCreate: function(){
+    localStorage.setItem('count', localStorage.getItem('count')+1)
+    if (localStorage.getItem('count') == "1"){
+      localStorage.setItem('isAuth', false)
+    }
+  }
 }
 </script>
 

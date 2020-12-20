@@ -1,7 +1,7 @@
 <template>
     <div  id="myForm">
         <form @submit="postData" method="POST">
-          <h3>Antes de reservar: Comprueba la disponibilidad. </h3>
+          <h3>Anteasds de reservar: Comprueba la disponibilidad. </h3>
 
           <label for="fechaLlegada">Fecha de llegada: </label>
             <input type="date" name="fechaLlegada" id="fechaLlegada" value='2021-01-01' 
@@ -66,7 +66,7 @@
         },
         methods: {
             postData(e){
-                this.axios.post("https://hotel-api-equipo13.herokuapp.com/reserva/disponibilidad", this.posts)
+                this.axios.post("http://127.0.0.1:8000/reserva/disponibilidad", this.posts)
                 .then((result)=>{
                     //this.posts.detalles = JSON.stringify(result.data)
                     //window.location("../reserva/hacerReserva")

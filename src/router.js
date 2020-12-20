@@ -3,6 +3,8 @@ import vueRouter from 'vue-router'
 import reservaPost from './components/reservaPost'
 import Inicio from './components/Inicio'
 import VerReserva from './components/VerReserva'
+import inicioSesion from './components/inicioSesion'
+import vistaUsuario from './components/vistaUsuario'
 
 import App from './App'
 
@@ -29,6 +31,16 @@ const router = new vueRouter({
             path: '/reserva/:idReserva',
             name: "ver_reserva",
             component: VerReserva
+        },
+        {
+            path: '/login',
+            name: "login",
+            component: inicioSesion
+        },
+        {
+            path: '/perfil',
+            name: "perfil",
+            component: vistaUsuario
         },
     ]
 })
