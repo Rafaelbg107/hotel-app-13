@@ -15,6 +15,7 @@
         </form>
           <button v-on:click="login" v-if="is_auth == 'false'"> Iniciar Sesión </button>
           <button v-on:click="cerrarSesion" v-if="is_auth2 == 'false'"> Cerrar Sesión </button>
+          <button v-on:click="verPerfil" v-if="is_auth2 == 'false'"> Ver Perfil </button>
       </nav>
     </div>
 
@@ -74,6 +75,9 @@ export default {
       console.log(typeof this.is_auth)
       console.log(this.is_auth2)
       window.location = "../Inicio/"
+    },
+    verPerfil: function(){
+      window.location = "../perfil/"
     },
   },
   beforeCreate: function(){
