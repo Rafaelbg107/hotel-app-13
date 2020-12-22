@@ -9,10 +9,10 @@
             <section class="fechas">
                 <label for="fechaLlegada">Fecha de llegada: </label>
                     <input type="date" name="fechaLlegada" id="fechaLlegada" value='2021-01-01' 
-                    min="2020-12-15" required v-model="posts.fechaLlegada">
+                    min="2020-12-21" required v-model="posts.fechaLlegada">
                 <label for="FechaSalida">Fecha de salida: </label>
                     <input type="date" name="FechaSalida" id="FechaSalida" value='2021-01-01' 
-                    min="2020-12-15" required v-model="posts.fechaSalida">
+                    min="2020-12-21" required v-model="posts.fechaSalida">
             </section>
             <hr>
             

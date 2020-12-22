@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div id="vista">
         <form>
-          <button type="submit" v-on:click="verReservas" v-if="funciona">Ver Reservas</button>
+          <button type="submit" v-on:click="verReservas" >Ver Reservas</button>
         </form>
         <form>
           <button type="submit" v-on:click="verDatos">Ver datos</button>
@@ -169,6 +169,20 @@
         color: #2592ad;
         font-weight: normal ;
         font-family: "Bahnschrift Light","Bahnschrift Light" ;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
+    button{
+    color: #333333;
+    background: #c2f1ff;
+    border: 2px solid  #0c7f9cd7;
+    border-radius: 20px;
+    padding: 8px 40px;
+    transition: background-color .3s;
+  }
+  button:hover{
+    color: black;
+    background: #F5F7F9;
+    border: 1px solid  #2f8ca3b0;
+  }
 </style>

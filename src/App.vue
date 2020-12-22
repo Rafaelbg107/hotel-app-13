@@ -14,8 +14,9 @@
           <button type="submit" v-on:click="verReserva">Buscar reserva</button>
         </form>
           <button v-on:click="login" v-if="is_auth == 'false'"> Iniciar Sesión </button>
-          <button v-on:click="cerrarSesion" v-if="is_auth2 == 'false'"> Cerrar Sesión </button>
           <button v-on:click="verPerfil" v-if="is_auth2 == 'false'"> Ver Perfil </button>
+          <button v-on:click="cerrarSesion" v-if="is_auth2 == 'false'"> Cerrar Sesión </button>
+          
       </nav>
     </div>
 
@@ -23,8 +24,9 @@
       <router-view></router-view>   
     </div>
 
-        <div class="footer">
+    <div class="footer">
       <h2>Desarrollado para Misión TIC 2022. Todos los derechos reservados ©</h2>
+      <button v-on:click="verDevs"> Desarrolladores </button>
     </div>
   </div>
 </template>
@@ -79,6 +81,9 @@ export default {
     verPerfil: function(){
       window.location = "../perfil/"
     },
+    verDevs: function(){
+      window.location = "../desarrolladores/"
+    },
   },
   beforeCreate: function(){
     localStorage.setItem('count', localStorage.getItem('count')+1)
@@ -113,8 +118,6 @@ export default {
     text-align: center;
     color: black;
   }
-
-  
   .header nav {
     height: 100%;
     width: 40%;
@@ -154,9 +157,13 @@ export default {
     min-height: 60px;
     background-color: #fffffffb;
     color: #E5E7E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
   .footer h2{
-    width: 100%;
+    width: 50%;
     height: 80%;
     display: flex;
     justify-content: center;
@@ -165,6 +172,20 @@ export default {
     font-family: "Helvetica" ;
     font-size: 80%;
     color: #2f8ca3b0;
+  }
+  .footer button{
+    margin-right: 10%;
+    color: #333333;
+    background: #c2f1ff;
+    border: 2px solid  #0c7f9cd7;
+    border-radius: 20px;
+    padding: 8px 40px;
+    transition: background-color .3s;
+  }
+  .footer button:hover{
+    color: black;
+    background: #F5F7F9;
+    border: 1px solid  #2f8ca3b0;
   }
 
   #myForm {
