@@ -17,7 +17,7 @@
             <hr>
             
             <section class="tipoHabitacion">
-            <label for="habitacion">Habitacion</label>
+            <label for="habitacion">Habitación</label>
                 <select name="habitacion" id="habitacion" v-model="posts.habitacion"> 
                 <option value="Estándar">Estándar</option>
                 <option value="Doble">Doble</option>

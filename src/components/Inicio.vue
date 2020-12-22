@@ -1,7 +1,7 @@
 <template>
     <div  id="myForm">
         <form @submit="postData" method="POST">
-          <h3>Antes de reservar: Comprueba la disponibilidad. </h3>
+          <h3>Antes de reservar, comprueba la disponibilidad. </h3>
 
           <label for="fechaLlegada">Fecha de llegada: </label>
             <input type="date" name="fechaLlegada" id="fechaLlegada" value='2021-01-01' 
@@ -11,7 +11,7 @@
                     min="2020-12-15" required v-model="posts.fechaSalida">
           <hr>
 
-          <label for="habitacion">Habitacion</label>
+          <label for="habitacion">Habitación</label>
               <select name="habitacion" id="habitacion" required v-model="posts.habitacion"> 
                 <option value="Estándar">Estándar</option>
                 <option value="Doble">Doble</option>

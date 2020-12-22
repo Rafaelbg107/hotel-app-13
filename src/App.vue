@@ -9,9 +9,9 @@
       
       <nav>
         <form>
-          <input type="text" placeholder="Id de reserva" name="idReserva" 
+          <input type="text" placeholder="Id de Reserva" name="idReserva" 
               pattern="[0-9]{1,15}" required v-model="idres">
-          <button type="submit" v-on:click="verReserva">Buscar reserva</button>
+          <button type="submit" v-on:click="verReserva">Buscar Reserva</button>
         </form>
           <button v-on:click="login" v-if="is_auth == 'false'"> Iniciar Sesión </button>
           <button v-on:click="verPerfil" v-if="is_auth2 == 'false'"> Ver Perfil </button>

@@ -4,7 +4,7 @@
           <button type="submit" v-on:click="verReservas" >Ver Reservas</button>
         </form>
         <form>
-          <button type="submit" v-on:click="verDatos">Ver datos</button>
+          <button type="submit" v-on:click="verDatos">Ver Datos</button>
         </form>
 
         <table id="tabla" width="85%" v-if="visibleReservas">
