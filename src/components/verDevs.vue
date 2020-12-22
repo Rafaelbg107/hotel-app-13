@@ -1,10 +1,10 @@
 <template>
     <div>
         <div id="Ver">
-            <p>Laura Natalia Castro Garcia  <span>laura.castrogarcia57@gmail.com</span><br>
-            Rafael Rodrigo Bustos González  <span>rafaelbg107@gmail.com</span><br>
-            Franklin De Jesús Martínez Martínez <span>fdmartinez96@gmail.com</span><br>
-            Elias Camilo Cabarcas Carreño   <span>cmilocarreno09@gmail.com</span></p><br>
+            <p>Laura Natalia Castro García  <a href="mailto:laura.castrogarcia57@gmail.com">laura.castrogarcia57@gmail.com</a><br>
+            Rafael Rodrigo Bustos González  <a href="mailto: rafaelbg107@gmail.com">rafaelbg107@gmail.com</a><br>
+            Franklin De Jesús Martínez Martínez <a href="mailto:fdmartinez96@gmail.com">fdmartinez96@gmail.com</a><br>
+            Elías Camilo Cabarcas Carreño   <a href="mailto:cmilocarreno09@gmail.com">cmilocarreno09@gmail.com</a></p><br>
         </div>
         
     </div>
