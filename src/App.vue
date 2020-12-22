@@ -120,7 +120,7 @@ export default {
   }
   .header nav {
     height: 100%;
-    width: 40%;
+    width: 50%;
     padding: 10px;
     display: flex;
     justify-content: space-around;
